@@ -1,0 +1,24 @@
+@media screen and (max-width: 1000px)
+{
+.nav-container{
+    flex-wrap:wrap;
+}
+
+}
+@media screen and (max-width: 680px) {
+
+nav > * > * svg{
+  display: block;
+  pointer-events: all;
+  position: absolute;
+  max-height:2rem;
+  top:50%;
+  right:0%;
+  transform: translateY(-50%);
+}
+nav > * > *  svg:hover{
+  cursor: pointer;
+}
+
+
+}

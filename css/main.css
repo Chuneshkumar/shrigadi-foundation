@@ -1,0 +1,277 @@
+:root{
+  --primary-color: #1890F0;
+  --primary-key: #333333;
+  --primary-color: #1890F0;
+  --background-color: #f0f5fd;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face{
+  font-family: "Montserrat Regular";
+  src: local("Montserrat-Regular"), local("Montserrat Regular"), url("./fonts/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face{
+  font-family: "Montserrat Bold";
+  src: local("Montserrat-SemiBold"), local("Montserrat Bold"), url("./fonts/Montserrat-SemiBold.ttf") format("truetype");
+}
+html, body{
+  font-family: "Montserrat Regular";
+  background-color: var(--background-color);
+}
+main{
+  max-width: 90%;
+  margin: auto;
+  color: var(--primary-key);
+}
+a{
+  text-decoration: none;
+  color: var(--primary-key);
+}
+a:active{
+  color: var(--primary-key);
+}
+a:hover{
+  color: var(--primary-color);
+}
+h1, svg text.special{
+font-family:  "Montserrat Bold";
+}
+.btn{
+  background-color: var(--primary-color);
+  border: none;
+  padding: .5rem;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
+nav{
+  /* margin-top: 1rem; */
+  background: #fff;
+}
+.nav-container{
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* max-height: 5rem; */
+  margin: auto;
+  overflow: hidden;
+  max-width: 90%;
+  position: relative;
+}
+nav div.brand {
+  /* flex: 1; */
+
+}
+nav div.brand img{
+  max-width: 100%;
+    width: 20rem;
+  /* max-height: 100%; */
+}
+nav div.Menu{
+  /* flex: 1; */
+}
+
+nav > * > * svg{
+  display: none;
+  pointer-events: none;
+}
+
+nav > * > * > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav > * > * > ul li{
+  display: block;
+  /* font-size: 0.8rem; */
+  /* padding-left: 1rem; */
+  margin:.5rem;
+}
+nav div.Menu ul li a.btn:hover{
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  transition: all .3s ease;
+}
+
+h1{
+  margin-top:5rem;
+  text-align: center;
+}
+div.problems {
+  display: flex;
+  /* min-height: 100vh; */
+  /* overflow: auto; */
+}
+div.problems div.right{
+  margin-top: 2rem;
+  padding: 10px 20px 10px 20px;
+  flex: 1;
+}
+div.problems div.left{
+  margin-top: 2rem;
+  padding: 10px 0px 10px 120px;
+  flex: 1;
+  /* max-height: 524px; */
+  /* overflow: auto; */
+}
+
+div.problems div.left ul{
+  /* background:; */
+  /* background-image: ; */
+  list-style: none;
+  margin-top: 2rem;
+  font-size:1.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+.problems .left .one{
+  background:linear-gradient(90deg, #fff, transparent), url("../img/parents_start.png") no-repeat center center/cover;
+}
+.problems .left .two{
+  background:linear-gradient(90deg, #fff, transparent), url("../img/2_school.png") no-repeat center center/cover;
+}
+.problems .left .three{
+  background:linear-gradient(90deg, #fff, transparent), url("../img/3_class.png") no-repeat center center/cover;
+}
+.problems .left .four{
+  background:linear-gradient(90deg, #fff, transparent), url("../img/4_mugup.png") no-repeat center center/cover;
+}
+.problems .left .five{
+  background:linear-gradient(90deg, #fff, transparent), url("../img/5_student.png") no-repeat center center/cover;
+}
+.problems .left .last{
+  background:linear-gradient(90deg, #fff, transparent), url("../img/parents_end.png") no-repeat center center/cover;
+}
+div.problems div.left ul p{
+  padding: 1rem;
+}
+/* ############################## */
+/* ######## SVG Classes ######### */
+/* ############################## */
+svg text {
+  fill:var(--primary-color);
+}
+svg text.special{
+  fill:var(--primary-key);
+}
+.st1{
+  fill:none;
+  stroke:var(--primary-color);
+  stroke-width:8;
+  stroke-miterlimit:10;
+}
+.st3{
+  font-size:54.8792px;
+}
+.st4{
+  fill:#FFFFFF;
+  stroke:var(--primary-color);
+  stroke-miterlimit:10;
+}
+.active{
+  fill: var(--primary-color);
+}
+.activeText{
+  fill: #fff;
+}
+.st6{
+  font-size:29px;
+}
+.st7{
+  font-size:23px;
+}
+.st8{
+  font-size:26px;
+}
+
+section{
+  margin-top: 5rem;
+}
+section h1{
+  font-size: 3.5rem;
+  padding-bottom: 30px;
+  margin-bottom: 5rem;
+}
+div.solutions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+div.solutions div.right{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* max-height: 50%; */
+}
+div.solutions div.left{
+  flex: 1;
+  position: relative;
+}
+
+div.solutions div.left p{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  font-size: 5rem;
+  transform: translate(-50%, -50%);
+}
+div.solutions div.right svg{
+  height: 80%;
+  width:80%
+}
+
+
+section.bisection{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding-top: 3rem;
+  max-height: 600px;
+}
+section.bisection * img{
+  max-width: 100%;
+  width: 400px;
+  height: 10%;
+}
+section.bisection p{
+  font-size: 3vw;
+  line-height: 1.2;
+  font-weight: 600;
+}
+section.bisection div.online_learning{
+  justify-content: flex-end;
+}
+section.bisection .speaking{
+  flex:1;
+}
+section.bisection #speaking{
+  flex: 1;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.container img{
+  min-height: 300px;
+}
+footer{
+  text-align: center;
+  background-color: var(--primary-key);
+  color: #fff;
+  line-height: 1.5;
+}
