@@ -49,33 +49,25 @@ font-family:  "Montserrat Bold";
 }
 
 nav{
-  /* margin-top: 1rem; */
   background: #fff;
 }
 .nav-container{
   display: flex;
-
   align-items: center;
   justify-content: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  /* max-height: 5rem; */
   margin: auto;
   overflow: hidden;
   max-width: 90%;
   position: relative;
 }
 nav div.brand {
-  /* flex: 1; */
 
 }
 nav div.brand img{
   max-width: 100%;
     width: 20rem;
-  /* max-height: 100%; */
-}
-nav div.Menu{
-  /* flex: 1; */
 }
 
 nav > * > * svg{
@@ -89,10 +81,9 @@ nav > * > * > ul {
   justify-content: center;
   align-items: center;
 }
+
 nav > * > * > ul li{
   display: block;
-  /* font-size: 0.8rem; */
-  /* padding-left: 1rem; */
   margin:.5rem;
 }
 nav div.Menu ul li a.btn:hover{
@@ -112,8 +103,9 @@ div.problems {
 }
 div.problems div.right{
   margin-top: 2rem;
-  padding: 10px 20px 10px 20px;
+  padding: 20px 10px;
   flex: 1;
+  /* flex-basis:  60%; */
 }
 div.problems div.left{
   margin-top: 2rem;

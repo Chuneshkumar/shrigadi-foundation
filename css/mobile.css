@@ -4,7 +4,35 @@
     flex-wrap:wrap;
 }
 
+div.problems div.right{
+  flex:2;
 }
+}
+
+@media screen and (max-width: 880px){
+
+  div.problems {
+    display: block;
+  }
+  div.problems div.left{
+    margin: auto;
+    padding: 0;
+  }
+  section .solutions{
+    display: block;
+  }
+  section div.solutions div.left{
+    position: unset;
+  }
+  section div.solutions div.left p{
+    position: unset;
+    transform: translate(0,0);
+    padding-bottom: 2rem;
+    font-size: 4rem;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 680px) {
 
 nav > * > * svg{
@@ -20,5 +48,14 @@ nav > * > *  svg:hover{
   cursor: pointer;
 }
 
-
+section.bisection{
+  display: block;
+  max-height: none;
+}
+.container img{
+  min-height: 100%;
+}
+section.bisection p{
+  font-size: 1.5rem;
+}
 }

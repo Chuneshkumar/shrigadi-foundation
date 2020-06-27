@@ -1,11 +1,5 @@
 var primaryColor = "#1890F0";
 gsap.registerPlugin(ScrollTrigger);
-ScrollTrigger.create({
-  trigger: ".right",
-  start: "top top",
-  end:"70% 30%",
-  pin:true
-});
 
 var tl = new TimelineLite();
 tl.to("#_1 circle", 1, { fill: "#fff"})
@@ -116,17 +110,33 @@ document.querySelector("nav div.Menu svg").addEventListener("click", (e)=>{
 });
 
 window.addEventListener("resize", resizeHandler);
-window.addEventListener("DOMContentLoaded", resizeHandler());
+window.addEventListener("DOMContentLoaded", resizeHandler);
 function resizeHandler(){
   console.log("window resized", window.innerWidth);
   if(window.innerWidth>1000)
   {
     document.querySelector("nav div.Menu ul").style.display="flex";
     document.querySelector("nav div.Menu ul").style.opacity=1;
+    ScrollTrigger.create({
+      trigger: ".right",
+      start: "top top",
+      end:"70% 30%",
+      pin:true,
+      pinSpacing:false
+    });
+
   }
   if(window.innerWidth>680){
     document.querySelector("nav div.Menu ul").style.display="flex";
     document.querySelector("nav div.Menu ul").style.opacity=1;
+    ScrollTrigger.create({
+      trigger: ".right",
+      start: "top top",
+      end:"70% 30%",
+      pin:true,
+      pinSpacing:false
+    });
+
   }
   else{
     document.querySelector("nav div.Menu svg").style.top="90%";
